@@ -10,9 +10,9 @@ const SearchForm = ({ onSubmit }) => {
       onSubmit({ keyword })
     }
   }
-  
+
   const handlerChange = evt => setKeyword(evt.target.value)
-  
+
   return (
     <form onSubmit={handlerSubmit}>
       <button>Buscar</button>
@@ -27,7 +27,7 @@ const SearchForm = ({ onSubmit }) => {
 }
 
 SearchForm.propTypes = {
-  onSubmit: PropTypes.func,
+  onSubmit: PropTypes.func
 }
 
 export default React.memo(SearchForm)
