@@ -23,9 +23,3 @@ test('search form could be used', async () => {
   const title = await screen.findByText(value)
   expect(title).toBeVisible()
 })
-
-test('renders without crashing', async () => {
-  render(<App />)
-  const title = await screen.findByText(/Última búsqueda/i)
-  expect(title).toBeInTheDocument()
-})
