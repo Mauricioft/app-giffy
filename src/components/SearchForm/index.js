@@ -27,7 +27,7 @@ const SearchForm = ({ onSubmit }) => {
 }
 
 SearchForm.propTypes = {
-  handlerSubmit: PropTypes.func,
+  onSubmit: PropTypes.func,
 }
 
 export default React.memo(SearchForm)
